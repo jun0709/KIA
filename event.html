@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/event.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <title>event</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <ul>
+                <li><a href="car_page.html">차량</a></li>
+                <li><a href="application.html">체험</a></li>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="FAQ.html">고객지원</a></li>
+            </ul>
+            <div class="logo"><a href="index.html"><img src="./img/index/kia_bl.png" alt="로고"></a></div>
+            <div class="user"><a href="login.html">로그인</a></div>
+        </header>
+        <div class="top">
+            <div class="title">
+                <h1>이벤트</h1>
+                <p>기아의 다양한이벤트를 만나보세요</p>
+            </div>
+            <div class="btn_outer">
+                <div class="btn_inner">
+                    <select id="event_btn">
+                        <option class="op_btn" value="ing" selected>진행중인 이벤트</option>
+                        <option class="op_btn" value="end">종료된 이벤트</option>
+                        <option class="op_btn" value="win">당첨자 발표</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="sec">
+            <div class="content">
+                <div class="event_inner">
+                    <div class="event_list" id="ing">
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item1.png" alt="진행중인이벤트이미지1">
+                            </div>
+                            <div class="event_name">
+                                <p>EV3 신차 런칭 기념 보증연장상품 특가 할인 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-07-08 ~ 2024-09-30</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item2.png" alt="진행중인이벤트이미지2">
+                            </div>
+                            <div class="event_name">
+                                <p>7월 기아 구매혜택</p>
+                            </div>
+                            <div class="event_date"><span>2024-07-03 ~ 2024-07-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item3.png" alt="진행중인이벤트이미지3">
+                            </div>
+                            <div class="event_name">
+                                <p>7월 스토어 방문 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-07-02 ~ 2024-07-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item4.jpg" alt="진행중인이벤트이미지4">
+                            </div>
+                            <div class="event_name">
+                                <p>7월 전용카드 구매혜택 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-07-01 ~ 2024-07-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item5.png" alt="진행중인이벤트이미지5">
+                            </div>
+                            <div class="event_name">
+                                <p>더 뉴 카니발 & 스포티지, RV 최다 판매 기념 고객감사 보증연장상품 특가 할인 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-24 ~ 2024-09-30</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item6.jpg" alt="진행중인이벤트이미지6">
+                            </div>
+                            <div class="event_name">
+                                <p>기아 e-라이프 패키지 출시</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-04 ~ 2024-12-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item7.png" alt="진행중인이벤트이미지7">
+                            </div>
+                            <div class="event_name">
+                                <p>The new EV6 및 The Kia EV3 출시 기념 찾아가는 충전 서비스</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-04 ~ 2024-12-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item8.jpg" alt="진행중인이벤트이미지8">
+                            </div>
+                            <div class="event_name">
+                                <p>EV3 구매 고객 혜택</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-04 ~ 2024-12-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item9.png" alt="진행중인이벤트이미지9">
+                            </div>
+                            <div class="event_name">
+                                <p>The new EV6 X Kia Flex 할인 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-05-17 ~ 2024-12-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/evnent_item10.jpg" alt="진행중인이벤트이미지10">
+                            </div>
+                            <div class="event_name">
+                                <p>트리플 제로 구매프로그램 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-05-14 ~ 2024-12-31</span></div>
+                        </div>
+                    </div>
+                    <div class="event_list " id="end">
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img1.png" alt="종료된이벤트이미지1">
+                            </div>
+                            <div class="event_name">
+                                <p>기아 큐레이터 2기 모집</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-21 ~ 2024-07-08</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img2.jpg" alt="종료된이벤트이미지2">
+                            </div>
+                            <div class="event_name">
+                                <p>The new EV6 3박 4일 시승 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-17 ~ 2024-06-30</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img3.jpg" alt="종료된이벤트이미지3">
+                            </div>
+                            <div class="event_name">
+                                <p>기아 크리에이터 7기 모집</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-14 ~ 2024-07-01</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img4.png" alt="종료된이벤트이미지4">
+                            </div>
+                            <div class="event_name">
+                                <p>6월 기아 구매 혜택</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-01 ~ 2024-06-30</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img5.png" alt="종료된이벤트이미지5">
+                            </div>
+                            <div class="event_name">
+                                <p>6월 기아 스토어 방문 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-01 ~ 2024-06-30</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img6.jpg" alt="종료된이벤트이미지6">
+                            </div>
+                            <div class="event_name">
+                                <p>6월 전용카드 구매혜택 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-01 ~ 2024-06-30</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img7.jpg" alt="종료된이벤트이미지7">
+                            </div>
+                            <div class="event_name">
+                                <p>The Kia EV3 얼리체크인 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-05-10 ~ 2024-06-06</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img8.jpg" alt="종료된이벤트이미지8">
+                            </div>
+                            <div class="event_name">
+                                <p>더 기아 타스만 디자인 대회</p>
+                            </div>
+                            <div class="event_date"><span>2024-05-03 ~ 2024-05-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img9.png" alt="종료된이벤트이미지9">
+                            </div>
+                            <div class="event_name">
+                                <p>5월 기아 스토어 방문 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-05-02 ~ 2024-05-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img end_img">
+                                <img src="./img/event/event_end_img10.png" alt="종료된이벤트이미지10">
+                            </div>
+                            <div class="event_name">
+                                <p>5월 기아 특별 구매혜택</p>
+                            </div>
+                            <div class="event_date"><span>2024-05-01 ~ 2024-05-31</span></div>
+                        </div>
+                    </div>
+                    <div class="event_list " id="win">
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/event_win_img1.png" alt="당첨자발표이미지1">
+                            </div>
+                            <div class="event_name">
+                                <p>6월 기아 스토어 방문 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-06-01 ~ 2024-06-30</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/event_win_img2.png" alt="당첨자발표이미지2">
+                            </div>
+                            <div class="event_name">
+                                <p>더 기아 타스만 디자인 대회 수상작 발표</p>
+                            </div>
+                            <div class="event_date"><span>2024-05-03 ~ 2024-05-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/event_win_img3.png" alt="당첨자발표이미지3">
+                            </div>
+                            <div class="event_name">
+                                <p>5월 기아 스토어 방문 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2024-05-02 ~ 2024-05-31</span></div>
+                        </div>
+                        <div class="event_item">
+                            <div class="event_img">
+                                <img src="./img/event/event_win_img4.jpg" alt="당첨자발표이미지4">
+                            </div>
+                            <div class="event_name">
+                                <p>더 뉴 모닝 계약 고객 초보운전 연수 지원 이벤트</p>
+                            </div>
+                            <div class="event_date"><span>2023-07-18 ~ 2023-08-18</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="footer_top">
+                <p>© Kia Corp. All rights reserved</p>
+            <ul>
+                <li>개인정보 처리방침</li>
+                <li>프라이버시 센터</li>
+                <li>이용약관</li>
+                <li>윤리경영 사이버감사실</li>
+                <li>전자공고</li>
+                <li>사이트맵</li>
+            </ul>
+            </div>
+            <div class="footer_bottom">
+                <ul>
+                    <li>23년 국가고객만족도(NCSI)<br>
+                        경형승용(9년연속), 중형승용(4년연속)<br>
+                        컴팩트RV, 대형RV 1위
+                    </li>
+                    <li>
+                        24년 한국 산업의 서비스 품질지수<br>
+                        우수 콜센터 선정 (21년 연속)
+                    </li>
+                    <li>
+                        22년 한국산업의 서비스 품질지수<br>
+                        자동차 A/S부문 1위 (9년 연속)
+                    </li>
+                    <li>
+                        24년 대한민국 국가브랜드 대상<br>
+                        자동차 멤버십 부문 1위 (13년 연속)
+                    </li>
+                    <li>
+                        23년 한국서비스품질지수(KS-SQI)<br>
+                        자동차 판매서비스 부문 1위 (4년 연속)
+
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <div class="retop_btn">
+        </div>
+    </div>
+    <script src="./js/event.js"></script>
+</body>
+
+</html>

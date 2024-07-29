@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+.sec{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.item_outer{
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+.item_color ul {
+    display: flex;
+    gap: 5px;
+}
+.cicle {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+}
+.color_white{background: #f2f2f2;}
+.color_clearwhite{background:#fff ;}
+
+.color_gray{background: #474846;}
+.color_shellgray{background: #3a3b3b;}
+.color_moongray{background: #68686a;}
+.color_spaclegray{background: #7e7d82;}
+.color_astrogray{background: #484a48;}
+.color_intergray{background: #262931;}
+.color_peplegray{background: #a09fa5;}
+.color_stealgray{background: #9f9f9f;}
+.color_wolfgray{background: #585e61;}
+.color_ivorysliver1{background: #8f8e89;}
+.color_ivorysliver2{background: #8e8d89;}
+.color_metal{background: #45484d;}
+.color_panmetal{background: #303031;}
+.color_plratinum{background: #68686a;}
+
+.color_black{background:#091113 ;}
+
+.color_beige{background: #c5c0ab;}
+.color_milbeige{background: #cac7c0;}
+
+.color_blue{background:#111b32 ;}
+.color_oceanblue{background: #155b81;}
+.color_oceanblue2{background: #014e78;}
+.color_darkoceen{background: #1b3f72;}
+.color_mineralblue{background: #283952;}
+.color_problue{background: #5a717e;}
+.color_plrotonblue{background: #4b7c83;}
+.color_yootblue{background: #283952;}
+.color_jeanblue{background: #1c2c6f;}
+.color_cromablue{background: #0e121f;}
+.color_bestablue{background: #0b2237;}
+.color_astrablue{background: #374249;}
+.color_grabity{background: #242f41;}
+
+.color_icegreen{background: #778583;}
+.color_scapegreen{background: #404c47;}
+.color_abengreen{background:#707c70 ; }
+.color_mint{background: #83a4a1;}
+
+.color_red{background: #912d22;}
+.color_pleared{background: #6c111a;}
+.color_sigred{background: #a7282b;}
+
+.color_glacier{background: #a1a29d;}
+
+.color_sendbrown{background: #979185;}
+
+.color_yellow{background: #caaf5e;}
+
+
+
+
+.item_price{
+    color: #8f8f8f;
+}
+.swiper {
+    width: 1000px;
+    height: 300px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .swiper-slide{
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
+    cursor: pointer;
+  }
+
+
+
+
+  

@@ -1,0 +1,44 @@
+@charset "utf-8";
+.login_outer{
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.login_box{
+    max-width: 400px;
+    margin: auto;
+}
+.login_box h5{
+    padding: 10px ;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+.input_box input{
+    display: block;
+    border:1px solid #ddd;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 5px;
+    outline-color: #697278;
+}
+.login_box button{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.find{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.find a{
+    font-size: 14px;
+}
+.find p{
+    padding: 0 5px;
+    color: #b1b1b1;
+}

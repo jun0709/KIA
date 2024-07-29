@@ -1,0 +1,141 @@
+@charset "utf-8";
+.banner{
+    position: relative;
+}
+.banner_font{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 9;
+}
+section{
+    margin-bottom: 200px;
+}
+.title{
+    margin: auto;
+    text-align: center;
+    padding: 100px 0;
+    font-size: 30px;
+}
+.FAQ{
+    width: 100%;
+    background: #efefef;
+    
+}
+.FAQ_inner{
+    padding: 100px 0;
+    max-width: 1000px;
+    margin: auto;
+}
+.accordion_title{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #697278;
+    padding-bottom: 20px;
+}
+
+
+.acco_btn{
+    padding: 20px 0;
+    border-bottom: 1px solid #697278;
+    position: relative;
+}
+.acco_p{
+    display: none;
+}
+.btn_icon{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.line{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    transition: all .5s;
+}
+.hei{
+    transform: rotate(90deg);
+}
+
+.acco_p{
+    color: #697278;
+    font-size: 14px;
+    padding: 30px 0;
+    line-height: 30px;
+}
+.acco_p p{
+    padding:30px 0;
+}
+.acco_p span{
+    font-weight: bold;
+}
+.acco_p a{
+    text-decoration: underline;
+    color: #000;
+}
+.FAQ_time{
+    padding: 50px 0;
+    text-align: center;
+    margin: auto;
+}
+.link_btn_list{
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    flex-wrap:nowrap;
+    gap: 50px;
+}
+.link_btn{
+    width: calc(100%/4);
+    height: 244px;
+    background: #efefef;
+    padding: 10px;
+    position: relative;
+}
+.link_btn div{
+    width: 40px;
+    /* filter:(); */
+}
+.link_btn p{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.as_outer{
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.as_btn_outer{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.as_btn{
+    border: 1px solid #000;
+    padding: 20px 200px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #697278;
+    cursor: pointer;
+}
+.as_img_outer div{
+    display: none;
+}
+.block{
+    display: block !important;
+}
+.color{
+    background: #000;
+    color: #fff;
+}
