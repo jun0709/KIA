@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/estimate.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <title>estimate</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <ul>
+                <li><a href="car_page.html">차량</a></li>
+                <li><a href="application.html">체험</a></li>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="FAQ.html">고객지원</a></li>
+            </ul>
+            <div class="logo"><a href="index.html"><img src="./img/index/kia_bl.png" alt="로고"></a></div>
+            <div class="user"><a href="login.html">로그인</a></div>
+        </header>
+        <main>
+            <section id="left_main">
+                <div class="model_name">
+                    <h1>레이 EV</h1>
+                    <p>총 차량 가격</p>
+                    <div class="price">
+                        <p><span></span>원</p>
+                    </div>
+                </div>
+                <div class="model_img_out">
+                    <div class="model_img1">
+                        <img src="./img/estimate/ray_Ev_sedan.png" alt="세단레이이미지">
+                    </div>
+                    <div class="model_img2">
+                        <img src="./img/estimate/ray_Ev_van.png" alt="밴레이이미지">
+                    </div>
+
+                </div>
+            </section>
+            <section id="right_main">
+                <div class="model_title">
+                    <h1>레이 EV</h1>
+                </div>
+                <div class="trim">
+                    <h1>트림 선택</h1>
+                    <div class="trim_cho">
+                        <div class="body_type_out">
+                            <div class="body_type_name"><span>바디타입</span></div>
+                        <div class="body_type">
+                           <div class="body_type_box">
+                            <input type="radio" class="body_type_btn" id="body_type_label1" name="body_label" value="sedan"  checked>
+                           <label class="body_type_label_btn" for="body_type_label1">승용</label>
+                           </div>
+                           <div class="body_type_box">
+                            <input type="radio" class="body_type_btn" id="body_type_label2" name="body_label" value="van" >
+                           <label class="body_type_label_btn" for="body_type_label2">벤</label>
+                           </div>
+                        </div>
+                        </div>
+                        <div class="row body_type_out">
+                            <div class="body_type_name"><span>엔진</span></div>
+                            <div class="body_type">
+                                <div class="body_type_box row_btn"><span>전기차</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trim_cho_type_outer">
+                        <div class="trim_cho_type_outer_title">
+                            <h3>옵션</h3>
+                        </div>
+                        <div class="trim_cho_type" id="sedan_type">
+                            <div class="sedan_type_btn_div1">
+                                <input type="radio" class="sedan_btn" id="sedan_type_label1" name="sedan_label" value="light" >
+                                <label class="option_type_label" for="sedan_type_label1">
+                                    <span>라이트 A/T 2WD</span>
+                                    <span>27,750,000원</span>
+                                </label>
+                            </div>
+                            <div class="sedan_type_btn_div2">
+                                <input type="radio" class="sedan_btn" id="sedan_type_label2" name="sedan_label" value="air">
+                                <label class="option_type_label" for="sedan_type_label2">
+                                    <span>에어 A/T 2WD</span>
+                                    <span>29,550,000원</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="trim_cho_type" id="van_type">
+                            <div class="van_type_btn_div1">
+                                <input type="radio" class="van_btn" id="van_type_label1" name="van_label" value="van_light" checked>
+                                <label class="option_type_label" for="van_type_label1">
+                                    <span>밴 라이트 A/T 2WD</span>
+                                    <span>27,450,000원</span>
+                                </label>
+                            </div>
+                            <div class="van_type_btn_div2">
+                                <input type="radio" class="van_btn" id="van_type_label2" name="van_label" value="van_air">
+                                <label class="option_type_label" for="van_type_label2">
+                                    <span>밴 에어 A/T 2WD</span>
+                                    <span>27,950,000원</span>
+                                </label>
+                            </div>
+                            <div class="van_type_btn_div3">
+                                <input type="radio" class="van_btn" id="van_type_label3" name="van_label" value="van_light1">
+                                <label class="option_type_label" for="van_type_label3">
+                                    <span>밴 라이트 A/T 2WD(1인승)</span>
+                                    <span>27,350,000원</span>
+                                </label>
+                            </div>
+                            <div class="van_type_btn_div4">
+                                <input type="radio" class="van_btn" id="van_type_label4" name="van_label" value="van_air1">
+                                <label class="option_type_label" for="van_type_label4">
+                                    <span>밴 에어 A/T 2WD(1인승)</span>
+                                    <span>27,800,000원</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="next_btn">
+                <div><button>컬러선택</button></div>
+            </div>
+        </main>
+        
+    </div>
+    <script src="./js/estimate.js"></script>
+</body>
+</html>
