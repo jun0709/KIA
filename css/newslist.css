@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.newslist_title{
+    text-align: center;
+    margin: 100px 0;
+}
+.newslist_title h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.newslist_outer{
+    max-width: 1500px;
+    margin:150px  auto;
+}
+.news_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.news_list a{
+    width: calc((100% - 50px)/ 2);
+}
+.news_name{
+    padding: 10px 0;
+}
+.news_name p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    padding: 10px 0;
+}

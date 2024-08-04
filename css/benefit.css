@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+.benefit_title{
+    text-align: center;
+    margin: 100px 0;
+}
+.benefit_title h1{
+    font-size: 40px;
+}
+nav{
+    max-width: 1500px;
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    position: relative;
+}
+nav ul li{
+    padding: 10px 30px 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color:#697278;
+    cursor: pointer;
+}
+.benefit_outer{
+    padding-top: 100px;
+    border-top: 1px solid #ddd;
+}
+.benefit_car_list{
+    border-bottom: 1px solid #ddd;
+}
+.benefit_car_list:nth-child(2n){
+    background: #f8f8f8;
+}
+.benefit_car_item{
+    max-width: 1500px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+}
+.benefit_car_inner_box{
+    width: 50%;
+    position: relative;
+}
+.benefit_left_top{
+    display: flex;
+}
+.benefit_car_name{
+    width: 30%;
+}
+.benefit_car_name h2{
+    font-size: 30px;
+}
+.benefit_car_name p{
+    color: #697278;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.benefit_car_name span{
+    font-size: 25px;
+    font-weight: bold;
+}
+.benefit_car_img{
+    width: 70%;
+}
+.benefit_btn_outer{
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    right: 20%;
+}
+.benefit_btn_outer a{
+    padding: 10px 30px;
+    border: 1px solid #ddd;
+}
+.benefit_btn_outer a:last-child{
+    background: #000;
+    color: #fff;
+}
+table{
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+tr{
+    border-bottom: 1px solid #ddd ;
+}
+th,td{
+    padding: 30px 0;
+
+}
+table tr:last-child{
+    border: none;
+}
+table tr:last-child > td{
+    padding-left: 10px !important;
+    font-size: 14px;
+    color: #697278;
+}
+table tr td:last-child{
+    
+    font-weight: bold;
+}
+
+
+nav ul li::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    width: 0;
+    background: #000;
+}

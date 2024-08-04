@@ -1,0 +1,174 @@
+@charset "utf-8";
+section{
+    float: left;
+}
+#left_main{
+    width: 70%;
+    height: calc(100vh - 70px);
+    background: #f1f1f1;
+}
+#right_main{
+    width: 30%;
+    padding: 30px 50px 0;
+    height: calc(100vh - 170px);
+    overflow-y: auto;
+}
+.model_name{
+    padding: 30px;
+}
+.model_name h1{
+    font-size: 48px;
+    
+}
+.model_name > p{
+    font-size: 13px;
+    margin-top: 30px;
+    color: #697278;
+}
+.price span{
+    font-size: 40px;
+}
+.model_img_out{
+    text-align: center;
+}
+.model_title{
+    padding: 0 0 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+.model_title h1{
+    font-size: 40px;
+}
+.trim{
+    padding: 50px 0 0;
+}
+.trim >h1{
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+.trim_cho{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+.body_type{
+    overflow: hidden;
+    display: flex;
+    gap: 30px;
+    width: 70%;
+    align-items: center;
+}
+.body_type_name,.body_type_box{
+    float: left;
+    width: 100%;
+}
+.body_type_name{
+    width: 30%;
+    padding: 5px 0;
+}
+.body_type_btn{
+    display: none;
+}
+#body_type_label1 ~ .body_type_label_btn{
+    background: #000;
+    color: #fff;
+}
+.body_type_label_btn{
+    display: inline-block;
+    border: 1px solid #697278;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer ;
+    padding: 5px 0;
+}
+.row{
+    margin-top: 20px;
+}
+.row_btn{
+    background: #000;
+    color: #fff;
+    padding: 5px 0;
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.trim_cho_type_outer_title{
+    padding: 30px 0;
+}
+.sedan_btn,.van_btn{
+    display: none;
+}
+.option_type_label{
+    width: 100%;
+    display: grid;
+    margin-bottom:20px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #697278;
+    font-weight: bold;
+}
+.option_type_label span:first-child {
+    color: #000;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.boxshadow{
+    box-shadow: 1px 1px 4px 1px #ddd;
+    border: 1px solid #000;
+}
+
+
+.next_btn{
+    height: 100px;
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 30px 50px 0;
+}
+.next_btn div{
+    width: 100%;
+}
+.next_btn > div > button{
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    border: none;
+}
+.next_btn div button::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    width: 0;
+    background: rgba(189, 189, 189, 0.5);
+}
+.next_btn div button:hover::after{
+    width: 100%;
+}
+
+
+#right_main::-webkit-scrollbar {
+    width: 10px;
+   
+}
+#right_main::-webkit-scrollbar-thumb { 
+    background: #697278;
+    border-radius: 10px;
+
+}
+#right_main::-webkit-scrollbar-button {
+    display: none;
+}

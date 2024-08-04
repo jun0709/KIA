@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.news_sec{
+   
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+}
+.left_art{
+    width: 20%;
+    margin: 50px;
+    border-right: 1px solid #ddd;
+}
+.news_top{
+    font-size: 20px;
+    font-weight: bold;
+}
+.right_art{
+    width: 80%;
+    padding: 50px;
+}
+.news_title p{
+    padding: 10px 0;
+    color: #697278;
+}
+.news_main{
+    margin-top: 50px;
+}
+.news_img img{
+    width: 100%;
+}
+.news_detail{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+}
