@@ -104,15 +104,3 @@ table tr td:last-child{
 }
 
 
-nav ul li::after{
-    content: "";
-    display: inline-block;
-    height: 2px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-    width: 0;
-    background: #000;
-}
