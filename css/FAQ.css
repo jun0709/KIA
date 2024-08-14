@@ -9,7 +9,7 @@
     font-size: 40px;
     font-weight: bold;
     color: #fff;
-    z-index: 9;
+    z-index: 1;
 }
 section{
     margin-bottom: 200px;
@@ -54,7 +54,7 @@ section{
     top: 50%;
     transform: translateY(-50%);
 }
-.line{
+.icon_line{
     position: absolute;
     width: 30px;
     height: 3px;
