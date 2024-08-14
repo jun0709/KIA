@@ -14,7 +14,23 @@
 </head>
 <body>
     <div id="wrap">
+        <div class="menu_outer">
+            <ul>
+                <li><a href="car_page.html">차량</a></li>
+                <li><a href="application.html">체험</a></li>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="FAQ.html">고객지원</a></li>
+            </ul>
+            <div class="menu_login">
+                <a href="login.html">로그인</a>
+            </div>
+        </div>
         <header>
+            <div class="menu_tab_btn">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
             <ul>
                 <li><a href="car_page.html">차량</a></li>
                 <li><a href="application.html">체험</a></li>
@@ -22,14 +38,18 @@
                 <li><a href="FAQ.html">고객지원</a></li>
             </ul>
             <div class="logo"><a href="index.html"><img src="./img/index/kia_bl.png" alt="로고"></a></div>
-            <div class="user"><a href="login.html">로그인</a></div>
+            <div class="user">
+                <a href="login.html">로그인</a>
+            </div>
         </header>
             <main>
                 <div class="banner_outer">
                     <div class="banner_img">
                         <img src="./img/detail/banner.jpg" alt="차량배너이미지">
+                        <div class="banner_text"><h1>레이 EV</h1></div>
+                        <div class="btn" id="banner_btn">견적내기</div>
                     </div>
-                    <div class="banner_text"></div>
+                   
                 </div>
                 <nav>
                     <div class="nav_inner">
@@ -90,88 +110,92 @@
                 <section class="sec" >
                     <div class="sec_inner" >
                         <div class="title" id="sec2">
-                            <h4>모델</h4>
+                            <h5>모델</h5>
                             <h1>레이 EV 추천 모델</h1>
                         </div>
-                        <div class="model_list">
-                            <div class="model_item">
-                                <div class="name">
-                                    <p>전기차</p>
+                        
+                        <div class="swiper model_swip">
+                            <div class="model_list swiper-wrapper">
+                                <div class="model_item swiper-slide">
+                                    <div class="name">
+                                        <p>전기차</p>
+                                    </div>
+                                    <div class="description">
+                                        <h4>에어 A/T 2WD </h4>
+                                    </div>
+                                    <div class="model_img">
+                                        <img src="./img/detail/model_ray1.png" alt="모델1">
+                                    </div>
+                                    <ul class="model_info">
+                                        <li><span>외장 컬러</span><span>스모크 블루</span></li>
+                                        <li><span>내장 컬러</span><span>블랙 원톤</span></li>
+                                       
+                                        <li><span>옵션 (3)</span>
+                                            <div class="option"><span>컴포트 II</span><span>드라이브 와이즈 II</span><span>스타일</span></div>
+                                        </li>
+                                    </ul>
+                                    <div class="model_price">
+                                        <span>30,800,000 원</span>
+                                    </div>
+                                    <div class="model_btn">
+                                        <a href="">상담신청</a>
+                                        <a href="">견적내기</a>
+                                    </div>
                                 </div>
-                                <div class="description">
-                                    <h4>에어 A/T 2WD </h4>
+                                <div class="model_item swiper-slide">
+                                    <div class="name">
+                                        <p>전기차</p>
+                                    </div>
+                                    <div class="description">
+                                        <h4>에어 A/T 2WD </h4>
+                                    </div>
+                                    <div class="model_img">
+                                        <img src="./img/detail/model_ray2.png" alt="모델2">
+                                    </div>
+                                    <ul class="model_info">
+                                        <li><span>외장 컬러</span><span>클리어 화이트</span></li>
+                                        <li><span>내장 컬러</span><span>블랙 원톤</span></li>
+                                       
+                                        <li><span>옵션 (3)</span>
+                                            <div class="option"><span>컴포트 II</span><span>드라이브 와이즈 II</span><span>스타일</span></div>
+                                        </li>
+                                    </ul>
+                                    <div class="model_price">
+                                        <span>30,800,000 원</span>
+                                    </div>
+                                    <div class="model_btn">
+                                        <a href="">상담신청</a>
+                                        <a href="">견적내기</a>
+                                    </div>
                                 </div>
-                                <div class="model_img">
-                                    <img src="./img/detail/model_ray1.png" alt="모델1">
-                                </div>
-                                <ul class="model_info">
-                                    <li><span>외장 컬러</span><span>스모크 블루</span></li>
-                                    <li><span>내장 컬러</span><span>블랙 원톤</span></li>
-                                   
-                                    <li><span>옵션 (3)</span>
-                                        <div class="option"><span>컴포트 II</span><span>드라이브 와이즈 II</span><span>스타일</span></div>
-                                    </li>
-                                </ul>
-                                <div class="model_price">
-                                    <span>30,800,000 원</span>
-                                </div>
-                                <div class="model_btn">
-                                    <a href="">상담신청</a>
-                                    <a href="">견적내기</a>
+                                <div class="model_item swiper-slide">
+                                    <div class="name">
+                                        <p>전기차</p>
+                                    </div>
+                                    <div class="description">
+                                        <h4>밴 라이트 A/T 2WD (1인승) </h4>
+                                    </div>
+                                    <div class="model_img">
+                                        <img src="./img/detail/model_ray3.png" alt="모델3">
+                                    </div>
+                                    <ul class="model_info">
+                                        <li><span>외장 컬러</span><span>밀키 베이지</span></li>
+                                        <li><span>내장 컬러</span><span>블랙 원톤</span></li>
+                                       
+                                        <li><span>옵션 (0)</span>
+                                            <div class="option"><span>-</span></div>
+                                        </li>
+                                    </ul>
+                                    <div class="model_price">
+                                        <span>27,350,000 원</span>
+                                    </div>
+                                    <div class="model_btn">
+                                        <a href="">상담신청</a>
+                                        <a href="">견적내기</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="model_item">
-                                <div class="name">
-                                    <p>전기차</p>
-                                </div>
-                                <div class="description">
-                                    <h4>에어 A/T 2WD </h4>
-                                </div>
-                                <div class="model_img">
-                                    <img src="./img/detail/model_ray2.png" alt="모델2">
-                                </div>
-                                <ul class="model_info">
-                                    <li><span>외장 컬러</span><span>클리어 화이트</span></li>
-                                    <li><span>내장 컬러</span><span>블랙 원톤</span></li>
-                                   
-                                    <li><span>옵션 (3)</span>
-                                        <div class="option"><span>컴포트 II</span><span>드라이브 와이즈 II</span><span>스타일</span></div>
-                                    </li>
-                                </ul>
-                                <div class="model_price">
-                                    <span>30,800,000 원</span>
-                                </div>
-                                <div class="model_btn">
-                                    <a href="">상담신청</a>
-                                    <a href="">견적내기</a>
-                                </div>
-                            </div>
-                            <div class="model_item">
-                                <div class="name">
-                                    <p>전기차</p>
-                                </div>
-                                <div class="description">
-                                    <h4>밴 라이트 A/T 2WD (1인승) </h4>
-                                </div>
-                                <div class="model_img">
-                                    <img src="./img/detail/model_ray3.png" alt="모델3">
-                                </div>
-                                <ul class="model_info">
-                                    <li><span>외장 컬러</span><span>밀키 베이지</span></li>
-                                    <li><span>내장 컬러</span><span>블랙 원톤</span></li>
-                                   
-                                    <li><span>옵션 (3)</span>
-                                        <div class="option"><span>-</span></div>
-                                    </li>
-                                </ul>
-                                <div class="model_price">
-                                    <span>27,350,000 원</span>
-                                </div>
-                                <div class="model_btn">
-                                    <a href="">상담신청</a>
-                                    <a href="">견적내기</a>
-                                </div>
-                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </section>
@@ -271,11 +295,15 @@
                         <h5>내장</h5>
                         <h1>경형 최대 하이테크 공간</h1>
                     </div>
+                    <div class="inner_btn">
+                        <a class="front_btn color">front view</a>  
+                        <a class="side_btn ">side view</a>
+                    </div>
                     <div class="inner">
-                        <div class="inner_btn">
-                            <a class="front_btn color">front view</a>  
-                            <a class="side_btn ">side view</a>
+                        <div class="pop">
+                            <h5>좌우로 슬라이드 해보세요</h5>
                         </div>
+                        
                         <div class="inner_img1">
                             <img src="./img/detail/inner_img1.jpg" alt="내장이미지1">
                         </div>
@@ -344,36 +372,41 @@
                         <h5>드라이빙</h5>
                         <h1>도심 주행 스트레스 ZERO</h1>
                     </div>
-                    <div class="driving">
+                    <div class="driving swiper">
                       
-                        <div class="drive_list">
-                            <div class="drive_item" id="d_item1">
+                        <div class="drive_list swiper-wrapper">
+                            <div class="drive_item swiper-slide" id="d_item1">
                                 
                                 <p>i-PEDAL 모드</p>
                             </div>
-                            <div class="drive_item" id="d_item2">
-                                
-                                <p>전자식 파킹 브레이크</p>
-                             
+                            <div class="drive_list_nt2n swiper-slide">
+                                <div class="drive_item2n" id="d_item2">
+                                    <p>전자식 파킹 브레이크</p>
+    
+                                </div>
                             </div>
-                            <div class="drive_item" id="d_item3">
+                            <div class="drive_item swiper-slide" id="d_item3">
                                 
                                 <p>후측방 충돌방지 보조</p>
                          
                             </div>
-                            <div class="drive_item" id="d_item4">
-                                
-                                <p>전방 충돌방지 보조</p>
-                               
+                            <div class="drive_list_nt2n swiper-slide">
+                                <div class="drive_item2n" id="d_item4">
+                                    <p>전자식 파킹 브레이크</p>
+    
+                                </div>
                             </div>
-                            <div class="drive_item" id="d_item5">
+                            <div class="drive_item swiper-slide" id="d_item5">
                                 
                                 <p>후방 교차 충돌방지 보조</p>
                          
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
+                    
                 </div>
+                
                </section>
                <section class="sec" >
                 <div class="sec_inner">
@@ -434,7 +467,7 @@
                                 </div>
                                 
                             </div>
-                            
+                            <div class="swiper-pagination"></div>
                         </div>
                         
                     </div>
@@ -483,5 +516,6 @@
             </div>
     </div>
         <script src="./js/detail.js"></script>
+        <script src="./js/common.js"></script>
 </body>
 </html>
