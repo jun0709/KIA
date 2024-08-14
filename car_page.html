@@ -15,7 +15,23 @@
 
 <body>
     <div id="wrap">
+        <div class="menu_outer">
+            <ul>
+                <li><a href="car_page.html">차량</a></li>
+                <li><a href="application.html">체험</a></li>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="FAQ.html">고객지원</a></li>
+            </ul>
+            <div class="menu_login">
+                <a href="login.html">로그인</a>
+            </div>
+        </div>
         <header>
+            <div class="menu_tab_btn">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
             <ul>
                 <li><a href="car_page.html">차량</a></li>
                 <li><a href="application.html">체험</a></li>
@@ -23,22 +39,28 @@
                 <li><a href="FAQ.html">고객지원</a></li>
             </ul>
             <div class="logo"><a href="index.html"><img src="./img/index/kia_bl.png" alt="로고"></a></div>
-            <div class="user"><a href="login.html">로그인</a></div>
+            <div class="user">
+                <a href="login.html">로그인</a>
+            </div>
         </header>
         <div class="banner">
             <img src="./img/itemlist/car_page_banner.jpg" alt="차량배너이미지">
         </div>
         <main>
             <div class="sec">
-                <div class="sec_banner"></div>
                 <div class="item_outer">
+                    <div class="car_list_title">
+                            <h1>EV</h1>
+                        </div>
                     <div class="car_sub_b">
+                        
                         <img src="./img/itemlist/item_b1_re.png" alt="서브이미지1">
                     </div>
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="item_img">
+
                                     <img src="./img/itemlist/ray_Ev.png" alt="ev레이이미지">
                                 </div>
                                 <div class="item_color">
@@ -200,12 +222,19 @@
                                 <div class="item_name">봉고 III EV 파워게이트</div>
                                 <div class="item_price">4,807 만원 ~</div>
                               </div>
+                              
                         </div>
-
+                        
+                        <div class="swiper-pagination"></div>
                     </div>
+                    
                 </div>
                 <div class="item_outer">
+                    <div class="car_list_title">
+                            <h1>Sedan</h1>
+                        </div>
                     <div class="car_sub_b">
+                        
                         <img src="./img/itemlist/item_b2_re.png" alt="서브이미지2">
                     </div>
                     <div class="swiper">
@@ -410,12 +439,18 @@
                                 <div class="item_name">K9</div>
                                 <div class="item_price">5,933 만원 ~</div>
                             </div>
+                            
                         </div>
-
+                        <div class="swiper-pagination"></div>
+                        
                     </div>
                 </div>
                 <div class="item_outer">
+                    <div class="car_list_title">
+                            <h1>RV</h1>
+                        </div>
                     <div class="car_sub_b">
+                        
                         <img src="./img/itemlist/item_b3_re.png" alt="서브이미지3">
                     </div>
                     <div class="swiper">
@@ -600,11 +635,15 @@
                                 <div class="item_price">6,250 만원 ~</div>
                             </div>
                         </div>
-
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <div class="item_outer">
+                    <div class="car_list_title">
+                            <h1>Van</h1>
+                        </div>
                     <div class="car_sub_b">
+                        
                         <img src="./img/itemlist/item_b4_re.png" alt="서브이미지4">
                     </div>
                     <div class="swiper">
@@ -720,7 +759,7 @@
                                 <div class="item_price">18,140 만원 ~</div>
                             </div>
                         </div>
-
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -769,6 +808,7 @@
 
     
     <script src="./js/car_page.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 
 </html>
