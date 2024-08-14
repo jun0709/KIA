@@ -20,14 +20,15 @@ nav{
 }
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
  
 nav ul li a{
-    padding: 40px 50px;
+    padding: 40px 0;
     display: grid;
     gap: 10px;
     justify-items: center;
+    font-size: 14px;
 }
 
 .sec{
@@ -38,45 +39,29 @@ nav ul li a{
 }
 
 .sec_model{
-    overflow-x: hidden;
     position: relative;
-
+    padding: 0 50px;
 }
-.btn{
-height: 100%;
-background: #fff;
-border: none;
-font-size: 40px;
-font-weight: bold;
-z-index: 9;
+.swiper-button-next,.swiper-button-prev{
+    font-weight: bold;
+    color : #000;
 }
-.btn1{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    color: #ddd;
+.swiper-pagination{
+    display: none;
 }
-.btn2{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+.model_title{
+    text-align: center;
+    padding: 50px 0;
 }
-.model{
-    display: flex;
-    width: 3000px;
-    transition: all 1s;
+.model_title h1{
+    font-size: 40px;
 }
-
-.model_car{
-    width: calc((100% - 50px)/ 3);
-    margin: 0 25px;
-    padding: 50px;
+.model_slide{
+    padding: 40px;
     border: 1px solid #ddd;
     border-radius: 20px;
 }
-.name{
+.model_name{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +72,7 @@ z-index: 9;
     padding: 5px 10px;
     border-radius: 20px;
 }
-.description{
+.model_description{
     margin: 30px 0;
     color: #697278;
 }
@@ -144,17 +129,34 @@ height: 4em;
 
 .car{
     display: flex;
+    gap: 20px;
 }
-article{
+.car_mobile{
+    display: none;
+}
+.car_artOne{
+    display: grid;
+    gap: 20px;
+    width: 25%;
+}
+.car_artTwo{
     display: flex;
+    width: 50%;
     flex-wrap: wrap;
     gap: 20px;
 }
+.car_artThree{
+    width: 25%;
+}
 .b_box{
-    border-radius: 30px;
+    width: auto;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     transition: all 1s;
+}
+.b_box img{
+    width: 100%;
 }
 .box_pan{
     width: 100%;
@@ -169,36 +171,14 @@ article{
 .box_pan span{
     font-size: 13px;
 }
-.banner_box1{
-    width: 400px;
-    height: 200px;
 
+.artTwo_box{
+    width: calc((100% - 20px) / 2) ;
 }
-.banner_box2{
-    width: 400px;
-    height: 300px;
-}
-.banner_box3{
-    width: 400px;
-    height: 200px;
-
-}
-.banner_box4{
-    width: 300px;
-    height: 200px;
-
-}
-.banner_box5{
-    width: 720px;
-    height: 300px;
-
-}
-.banner_box6{
-    width: 300px;
+.artThree_box{
     height: 100%;
-
 }
-.sec .news_title{
+ .news_title{
     font-size: 40px;
     text-align: center;
     padding: 50px 0;
@@ -237,3 +217,153 @@ padding: 10px;
 
 .dd{color: #ddd;}
 .bl{color: #000;}
+
+
+@media screen and (max-width:1024px) {
+    
+    .sub_tit{
+        font-size: 16px;
+    }
+    .tit{
+    font-size: 20px;
+    }
+    .new_contents p{
+        font-size: 14px;
+        
+    }
+    .new_contents{
+        padding: 30px 30px 0;
+    }
+    .news_btn{
+        bottom: 20px;
+    }
+    
+}
+@media screen and (max-width:900px) {
+    
+    .sub_tit{
+        font-size: 14px;
+    }
+    .tit{
+    font-size: 18px;
+    padding: 10px 0;
+    }
+    .new_contents p{
+        font-size: 12px;
+        
+    }
+    .new_contents{
+        padding: 30px 30px 0;
+    }
+    .news_btn{
+        bottom: 20px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:768px)  {
+    
+nav{
+    width: 70%;
+}
+nav ul li a{
+    padding: 30px 0;
+    font-size: 12px;
+}
+    .news_outer{
+        
+        position: relative;
+        padding-top: 55vw;
+    }
+    .news_inner{
+        width: 100%;
+    }
+    .news_inner img {
+        width: 100%;
+    }
+    .new_contents{
+        padding: 10px 10px 50px;
+    }
+    .sub_tit{
+        padding: 5px 0;
+        font-size: 12px;
+    }
+    .tit{
+        font-size: 16px;
+    }
+    .new_contents p{
+        display: none;
+    }
+    .news_img{
+        position: absolute;
+        top: 0;
+        height: 55vw;
+    }
+    .news_btn{
+        bottom: 10px;
+    }
+   
+}
+@media screen and (max-width:480px) and (min-width:320px) {
+    .sec{
+        margin: 100px auto;
+    }
+    nav{
+        width: 90%;
+        bottom: -80px;
+    }
+    nav ul li a{
+        padding: 10px 0;
+    }
+.nav_img{
+    width: 33px;
+}
+.nav_img img{
+    object-fit: scale-down;
+}
+.model_title{
+    padding: 30px 0;
+}
+.model_title h1{
+    font-size: 30px;
+}
+.model_name h2{
+    font-size: 20px;
+}
+.label_txt{
+    font-size: 14px;
+}
+.swiper-pagination{
+    display: block;
+    bottom: -15px !important;
+}
+.swiper-button-next,.swiper-button-prev{
+    display: none;
+}
+.sec_model{
+    padding: 0;
+}
+.model_slide{
+    padding: 20px;
+}
+.model_description{
+    font-size: 14px;
+}
+.model_info{
+    font-size: 14px;
+}
+.car{
+    display: none;
+}
+.car_mobile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.b_box{
+    width: calc((100% - 10px) / 2);
+    height: 100px;
+}
+.news_title{
+    font-size:30px ;
+}
+}
