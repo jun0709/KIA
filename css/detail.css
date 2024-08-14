@@ -1,4 +1,22 @@
 @charset "utf-8";
+.banner_img{
+    position: relative;
+}
+.banner_text{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    display: none;
+}
+#banner_btn{
+position: absolute;
+bottom: 10px;
+right: 10px;
+background: #fff;
+color: #000;
+display: none;
+}
 nav{
     box-shadow: 0px 2px 4px 0 #ddd;
 }
@@ -62,6 +80,7 @@ nav{
     width: 90%;
     height: 300px;
     transition: all .7s;
+    object-fit: fill;
 }
 .brand_slide h2{
     font-size: 20px;
@@ -74,16 +93,13 @@ nav{
     width: 80%;
    height: 350px;
 }
-
-.model_list{
+.model_swip{
     width: 100%;
     max-width: 1500px;
     margin: auto;
-    display: flex;
-    gap: 50px;
 }
+
 .model_item{
-    width: calc(100% /3);
     border: 1px solid #ddd;
     border-radius: 20px;
     padding: 20px;
@@ -143,7 +159,6 @@ height: 4em;
 
 .swiper-pagination{
     position: static !important;
-    margin-top: 50px;
 }
 
 
@@ -151,15 +166,28 @@ height: 4em;
 .inner{
     position: relative;
     overflow: hidden;
-    height: 800px;
+    height:800px;
 }
+.pop{
+    background-color: rgba(0, 0, 0, .7);
+        color: #fff;
+        display: none;
+        font-size: 1pc;
+        left: 50%;
+        margin: -20px 0 0 -25vw;
+        padding: 10px 0;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 50vw;
+        z-index: 10;
+    }
+
 .inner_btn{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+
     z-index: 9;
     display: flex;
-    
+    justify-content: center;
 }
 .inner_btn a{
     padding: 10px 20px;
@@ -170,6 +198,7 @@ height: 4em;
 .inner_img1{
     z-index: 1;
     position: absolute;
+
 }
 .inner_img2{
     position: absolute;
@@ -237,44 +266,44 @@ tbody tr :nth-child(4){
 }
 .drive_list{
 
+    height: calc(100% - 20px);
+    display: flex;
+    align-items: flex-start;
+}
+
+.drive_list_nt2n{
+    display: flex;
+    align-items: flex-end;
     height: 100%;
-   position: relative;
+
+}
+.drive_item2n{
+    width: 100%;
+    height: 300px;
 }
 .drive_item{
-    position: absolute;
-    width:300px;
     height: 300px;
     
 }
-.drive_item p{
+.drive_item p,.drive_item2n p{
     color: #fff;
     font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+    padding: 10px;
 }
 #d_item1{
-   left: 0;
     background: url("../img/detail/drive_img1.jpg")left /cover;
 
 }
 #d_item2{
-left: 20%;
-top: 30%;
     background: url("../img/detail/drive_img2.jpg")left /cover;
 }
 #d_item3{
-left: 40%;
     background: url("../img/detail/drive_img3.jpg")left /cover;
 }
 #d_item4{
-left: 60%;
-top: 30%;
     background: url("../img/detail/drive_img4.jpg")left /cover;
 }
 #d_item5{
-left: 80%;
     background: url("../img/detail/drive_img5.jpg")left /cover;
 }
 
@@ -286,4 +315,126 @@ left: 80%;
 
 
 
+@media screen and (max-width : 1024px) {
+    .nav_inner h2{
+        font-size: 24px;
+    }
+    .nav_item{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+    
+    .brand_wrap  .swiper-slide-active img{
+        width: 100%;
+       height: 350px;
+    }
+    .brand_slide h2{
+        font-size: 18px;
+    }
+    .info_left h2{
+        font-size: 20px;
+    }
+    .info_right p{
+        font-size: 14px;
+    }
+    .info{
+        gap: 30px;
+        padding: 30px 10px;
+    }
+    .inner{
+        height: 450px;
+    }
+    
+    .driving{
+        height: 400px;
+    }
+    .drive_item, .drive_item2n{
+        height: 200px;
+    }
+    .drive_item p, .drive_item2n p{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width : 768px){
+    .sec_inner{
+        padding: 0;
+    }
+    .banner_text{
+        display: block;
+    }
+    #banner_btn{
+        display: block;
+    }
+    .btn{
+        display: none;
+    }
+    .nav_inner{
+        justify-content: center;
+        padding: 0;
+    }
+    .nav_inner h2{
+        display: none;
+    }
+    .nav_item{
+        padding:10px ;
+    }
+    .btn{
+        padding: 10px;
+    }
+    .brand_slide h2{
+        font-size: 14px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .inner_img1,.inner_img2{
+        height: 450px;
+    }
+    .info{
+        display: grid;
+        gap: 10px;
+    }
+    .info_left h2{
+        font-size: 18px;
+    }
+    .access_slide h3{
+        font-size: 16px;
+    }
+    .sec:last-child .sec_inner{
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width:550px) {
+    .brand_slide h2{
+        font-size: 16px;
+    }
+    .inner{
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .inner_img1,.inner_img2{
+        width:  550px;
+    }
+}
+@media screen and (max-width:480px) {
+    #banner_btn{
+        font-size: 12px;
+    }
+    nav{
+        display: none;
+    }
+    .title h5{
+        font-size: 16px;
+    }
+    .title h1 {
+        font-size: 22px;
+    }
+    .brand_slide h2{
+        font-size: 16px;
+    }
+    .drive_item, .drive_item2n {
+        height: 100%;
+    }
+}
 
