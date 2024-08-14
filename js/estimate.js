@@ -5,7 +5,7 @@
         $('.price > p > span').text(price[0]);
         $("input[name='sedan_label']").first().prop('checked',true);
         $("input[name='sedan_label']").first().prop('checked',true).next('label').addClass('boxshadow');
-        $("input[name='van_label']").first().prop('checked',true);
+        $("input[name='van_label']").first().prop('checked',true );
         $("input[name='van_label']").first().prop('checked',true).next('label').addClass('boxshadow');
 
        
@@ -88,5 +88,28 @@ $('.next_btn button').click(function(){
     }
     else if(nextchk == 'van'){
         $(location).attr("href", "./van_estimate_color.html")
+    }
+})
+
+$('.plus_btn').click(function(){
+    $(this).toggleClass("active");
+    if($(this).hasClass("active")){
+        $('.plus_btn').animate({
+            bottom:700
+        })
+        $('#right_main').animate({
+            height:600
+        }
+        )
+    }
+    else{
+        $('.plus_btn').animate({
+            bottom:350
+        })
+        $('#right_main').animate({
+            height:250
+        }
+        )
+       
     }
 })

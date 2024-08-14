@@ -5,6 +5,35 @@ $('.b_box').mouseover(function(){
     $(this).find('img').css("transform", "scale(1)");
     $(this).find('.box_pan').stop().slideUp();
 })
+new Swiper('.model_siwper', {
+    direction: 'horizontal', 
+    slidesPerView:1, 
+    spaceBetween:40, 
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
+      breakpoints: {
+        
+        768: {
+          slidesPerView: 1,  
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,  
+          spaceBetween: 40,
+        },
+        1250 : {
+            slidesPerView: 3,  
+            spaceBetween: 40,
+        }
+      },
+  });
 
 $(window).scroll(function(){
     if($('.top > nav').offset().top<= $(window).scrollTop()){
@@ -49,19 +78,9 @@ $('nav li').mouseenter(function(){
     })
 })
 
-$(window).scroll(function(){
-    var scrollTop = $(window).scrollTop();
-    var offset = $('.sec').offset().top;
-    
-    if(scrollTop >= offset){
-      $('.retop_btn').fadeIn();
-    }
-    else{
-      $('.retop_btn').fadeOut();
-    }
-  })
-  
-  $('.retop_btn').click(function() {
-    var wrapOffset = $('#wrap').offset().top;
-    $('html, body').animate({ scrollTop: wrapOffset }, 'slow');
-  });
+
+
+
+  $(".b_box").click(function(){
+    $(location).attr("href", "detail.html")
+})

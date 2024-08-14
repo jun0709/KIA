@@ -143,3 +143,27 @@ $('.back').click(function(){
 $('.comple').click(function(){
     $(location).attr("href","./index.html");
 })
+
+
+$('.plus_btn').click(function(){
+    $(this).toggleClass("active");
+    if($(this).hasClass("active")){
+        $('.plus_btn').animate({
+            bottom:700
+        })
+        $('#right_main').animate({
+            height:600
+        }
+        )
+    }
+    else{
+        $('.plus_btn').animate({
+            bottom:350
+        })
+        $('#right_main').animate({
+            height:250
+        }
+        )
+       
+    }
+})

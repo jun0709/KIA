@@ -1,9 +1,29 @@
 new Swiper('.swiper', {
     direction: 'horizontal', 
-    loop: false, 
-    slidesPerView: 3.4, 
-    spaceBetween: 30
-    
+    slidesPerView:1, 
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    breakpoints: {
+        
+      768: {
+        slidesPerView: 2.4,  
+        spaceBetween: 30,
+        
+      },
+      1024: {
+        slidesPerView: 2.4,  
+        spaceBetween: 30,
+      },
+      1250 : {
+          slidesPerView: 3.4,  
+          spaceBetween: 30,
+      }
+    },
+   
   });
 
   $('.swiper-slide').click(function(){
@@ -11,19 +31,3 @@ new Swiper('.swiper', {
   })
 
   
-  $(window).scroll(function(){
-    var scrollTop = $(window).scrollTop();
-    var offset = $('.sec').offset().top;
-    
-    if(scrollTop >= offset){
-      $('.retop_btn').fadeIn();
-    }
-    else{
-      $('.retop_btn').fadeOut();
-    }
-  })
-  
-  $('.retop_btn').click(function() {
-    var wrapOffset = $('#wrap').offset().top;
-    $('html, body').animate({ scrollTop: wrapOffset }, 'slow');
-  });
