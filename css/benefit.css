@@ -13,14 +13,36 @@ nav{
 }
 nav ul{
     display: flex;
-    position: relative;
+    /* position: relative; */
 }
 nav ul li{
-    padding: 10px 30px 10px 0;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.nav_ev a{
+    color: #000;
+}
+nav ul li a{
     font-size: 20px;
     font-weight: bold;
     color:#697278;
-    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    right:  0;
+    transition: all 0.3s ease;
+}
+
+nav > ul > li > a.active::after {
+    width: 100%;
+    left: 0;
 }
 .benefit_outer{
     padding-top: 100px;
@@ -35,7 +57,7 @@ nav ul li{
 .benefit_car_item{
     max-width: 1500px;
     margin: auto;
-    padding: 50px 0;
+    padding: 50px 10px;
     display: flex;
 }
 .benefit_car_inner_box{
@@ -72,6 +94,7 @@ nav ul li{
 .benefit_btn_outer a{
     padding: 10px 30px;
     border: 1px solid #ddd;
+    background: #fff;
 }
 .benefit_btn_outer a:last-child{
     background: #000;
@@ -103,4 +126,71 @@ table tr td:last-child{
     font-weight: bold;
 }
 
-
+@media screen and (max-width:1024px) {
+    .benefit_left_top{
+        display: grid;
+    }
+    .benefit_car_name{
+        width: 100%;
+    }
+    .benefit_car_img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px) {
+    .benefit_title h1{
+        font-size: 30px;
+    }
+    .benefit_car_name h2{
+        font-size: 22px;
+    }
+    .benefit_car_name p{
+        font-size: 12px;
+    }
+    .benefit_car_name span{
+        font-size: 20px;
+    }
+    .benefit_car_item{
+        display: grid;
+    }
+    .benefit_car_inner_box{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .benefit_btn_outer{
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .benefit_btn_outer a{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:480px) {
+    .benefit_title h1{
+        font-size: 25px;
+    }
+    nav ul li{
+        padding-right: 10px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .benefit_btn_outer{
+        top: 0;
+        right: 0;
+        gap: 15px;
+        transform: translateX(0);
+    }
+    .benefit_btn_outer a{
+        font-size: 14px;
+    }
+    table{
+        font-size: 14px;
+    }
+    th, td{
+        padding: 20px 0;
+    }
+    table tr:last-child > td{
+        font-size: 12px;
+    }
+}

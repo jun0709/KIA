@@ -58,7 +58,8 @@
 }
 .event_item{
     padding: 50px 0;
-    max-width: 660px;
+    width: 660px;
+
 }
 
 .event_name{
@@ -74,4 +75,16 @@
 
 .end_img{
     opacity: 0.5;
+}
+
+
+@media screen and (max-width:1024px) {
+    .event_item{
+        width: calc((100% - 10px) / 2);
+    }
+}
+@media screen and (max-width:768px) {
+    .event_item{
+        width: 660px;
+    }
 }

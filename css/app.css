@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 9;
 }
 .pop_outer{
     height: 100%;
@@ -82,12 +83,37 @@ margin: 100px 0;
     background: #fff;
     border: 1px solid #697278;
     padding: 10px 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.ser_btn::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+.ser_btn:hover::after{
+    left: 0;
+    width: 100%;
 }
 .service ul li{
     font-size: 14px;
-    padding: 5px 0;
+    padding: 5px 10px;
     color: #697278;
 }
 .none{
     display: none;
+}
+
+@media screen and (max-width:768px) {
+    .ser_btn{
+        width: 100%;
+        padding: 10px 0;
+    }
 }
