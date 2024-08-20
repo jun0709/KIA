@@ -24,15 +24,30 @@ $('.link_btn').mouseenter(function(){
     $(this).css("color","#000")
 })
 $(".as_b1").click(function(){
-    $(".as_img1").addClass("block");
-    $(".as_img2").removeClass("block");
     $(".as_b1").addClass("color");
     $(".as_b2").removeClass("color");
+    if(innerWidth >768){
+        $(".as_img1").show();
+        $(".as_img2").hide();
+    }
+    else{
+        $(".cu_service_list").show();
+        $(".change_service_list").hide();
+    }
+
 })
 
 $(".as_b2").click(function(){
-    $(".as_img2").addClass("block");
-    $(".as_img1").removeClass("block");
     $(".as_b2").addClass("color");
     $(".as_b1").removeClass("color");
+    if(innerWidth >768){
+        $(".as_img2").show();
+        $(".as_img1").hide();
+    }
+    else{
+        
+        $(".change_service_list").show();
+        $(".cu_service_list").hide();
+    }
+   
 })
