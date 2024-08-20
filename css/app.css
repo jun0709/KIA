@@ -117,3 +117,8 @@ margin: 100px 0;
         padding: 10px 0;
     }
 }
+@media screen and (max-width:560px) {
+    .popup_con{
+        width: 100%;
+    }
+}
